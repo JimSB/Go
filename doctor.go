@@ -189,6 +189,7 @@ func Response(userInput string) string {
 		output = responses[len(responses)-1][randomIndex]
 	}
 
+	
 	// Build our final response and send it back. If the response contains %1, replace that with the remainder
 	// of the input string.
 	output = strings.ReplaceAll(output, "%1", remainder)
