@@ -3,25 +3,26 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"math/rand"
 	"os"
 )
 
-const prompt = "and press ENTER when ready."
+const prompt = "and don't type your number in, and press ENTER when ready."
 
 func main() {
 	///one way - declare, then assign (two steps)
-	var firstNumber int
-	var secondNumber = 5
-	var subtraction = 7
+	var firstNumber = rand.Intn(8) + 2
+	var secondNumber = rand.Intn(8) + 2
+	var subtraction = rand.Intn(8) + 2
 	var answer int
 
 	reader := bufio.NewReader(os.Stdin)
 
 	// display a welcome/instructions
 	fmt.Println("Guess the Number Game")
-	fmt.Println("Guess the Number Game")
 	fmt.Println("---------------------")
 	fmt.Println("")
+
 	fmt.Println("Thnk of a number between 1 and 10", prompt)
 	reader.ReadString('\n')
 
