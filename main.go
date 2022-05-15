@@ -9,6 +9,7 @@ import (
 const prompt = "and press ENTER when ready."
 
 func main() {
+	//testing push for Go program multiple folders
 	///one way - declare, then assign (two steps)
 	var firstNumber int
 	var secondNumber = 5
